@@ -41,13 +41,16 @@ print(number is number2)
 
 # Logical operators
 print(number is number2 and number is not number)
+print(number is number2 or number is not number)
 
 # Membership operators
 print('x' not in some_text)
 
 # Combining variables
+print((name+' ')*5)
+print(name + number)
+
 print('The result of this text is ' + some_text + ' conducted by '+ name)
 print(f"The result of this text is {some_text} conducted by {name}")
 
-print((name+' ')*5)
-print(name + number)
+
