@@ -27,7 +27,7 @@ print(set_variable2)
 set_variable2.discard("cat")
 
 # Example of using set
-quick_list = [1,1,1,1,1,2,2,3,6,5,4,8]
+quick_list = [1, 1, 1, 1, 1, 2, 2, 3, 6, 5, 4, 8]
 set_test = set(quick_list)
 print(set_test)
 
