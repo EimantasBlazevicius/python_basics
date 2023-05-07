@@ -39,3 +39,4 @@ for animal in animals:
 # range(50, 101, 5): 50-100 increasing by 5
 for number in range(50, 101, 5):
     print(number)
+
