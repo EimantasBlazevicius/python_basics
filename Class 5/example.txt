@@ -1,0 +1,5 @@
+id name age city potato
+1 Eimantas 30 Vilnius 5
+2 Yoda 2 Vilnius 0
+3 Obi 2 Vilnius 0
+4 Gintare 29 Kaunas 3
