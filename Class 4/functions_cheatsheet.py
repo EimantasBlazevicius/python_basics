@@ -139,3 +139,34 @@ def total_args_and_kwargs_with_optional_arg(potato, *args, **kwargs):
 
 
 total_args_and_kwargs_with_optional_arg(9, 2, 3, 4, 5, 6, eggs=8, bacon=7)
+
+# ----------------------- return version ----------------------------
+
+
+def hello_return():
+    return "Hello world"
+
+
+print(hello_return())
+
+
+def add(a, b):
+    return a+b
+
+
+print(add(1, 2))
+print(add(1, 2)*9)
+
+total_args_and_kwargs(add(1, 2))
+
+# ------------------------ sum function -----------------------------
+
+
+def sum1(items):
+    result = 0
+    for item in items:
+        result += item
+    return result
+
+
+print(sum1([1,2,3,4,5,6,7,8,9,5,1,525,15,451,61,5461,561,651,61,6515,6]))
