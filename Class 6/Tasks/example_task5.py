@@ -59,6 +59,7 @@ class Rational:
         if self.numerator / self.denominator <= other.numerator / other.denominator:
             return True
         return False
+    # -------------Task4---------------
 
     def __add__(self, other):
         numerator = self.numerator * other.denominator + other.numerator * self.denominator
@@ -77,12 +78,27 @@ class Rational:
 
     def __truediv__(self, other):
         return Rational(self.numerator/other.numerator, self.denominator / other.denominator)
+    # -----------Task 5-----------------
+
+    def save(self):
+        with open("example_task_file.txt", "w") as f:
+            f.write(f"{self.numerator},{self.denominator}")
+
+    def load(self):
+        with open("example_task_file.txt", "r") as f:
+            read_value=f.readline().split(',')
+            self.numerator = int(read_value[0])
+            self.denominator = int(read_value[1])
+
+    def add(self):
+        self.denominator += 5
 
 
 number = Rational(1, 2)
 number2 = Rational(1, 2)
-print(number+number2)
-print(number-number2)
-print(number*number2)
-print(number/number2)
-
+print(number)
+number.save()
+number.add()
+print(number)
+number.load()
+print(number)
