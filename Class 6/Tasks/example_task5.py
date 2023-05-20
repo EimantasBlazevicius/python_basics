@@ -3,9 +3,6 @@
 # 3. The comparison methods (eq, lt, gt, le, ge, cmp) should take ½ = 2/4.
 # 4. The operators +, -, *, / should be implemented correctly and return a new object of this class.
 # 5. It should be possible to save the current result to a file and load it.
-#
-# The class should always try to keep the abbreviated version of the fraction.
-
 
 class Rational:
     def __init__(self, numerator, denominator):
@@ -22,8 +19,8 @@ class Rational:
 
     def __repr__(self):
         pass
-
     # -------------Task2---------------
+
     def __float__(self):
         return self.numerator / self.denominator
 
