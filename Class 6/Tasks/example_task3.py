@@ -11,6 +11,7 @@ class Rational:
     def __init__(self, numerator, denominator):
         self.numerator = numerator
         self.denominator = denominator
+# -------------Task1---------------
 
     def __str__(self):
         if self.denominator == 1:
@@ -21,6 +22,7 @@ class Rational:
     def __repr__(self):
         pass
 
+# -------------Task2---------------
     def __float__(self):
         return self.numerator/self.denominator
 
@@ -29,9 +31,38 @@ class Rational:
 
     def __invert__(self):
         return Rational(self.denominator, self.numerator)
+# -------------Task3---------------
+
+    def __eq__(self, other):
+        if self.numerator / self.denominator == other.numerator / other.denominator:
+            return True
+        return False
+
+    def __gt__(self, other):
+        if self.numerator / self.denominator > other.numerator / other.denominator:
+            return True
+        return False
+
+    def __lt__(self, other):
+        if self.numerator / self.denominator < other.numerator / other.denominator:
+            return True
+        return False
+
+    def __ge__(self, other):
+        if self.numerator / self.denominator >= other.numerator / other.denominator:
+            return True
+        return False
+
+    def __le__(self, other):
+        if self.numerator / self.denominator <= other.numerator / other.denominator:
+            return True
+        return False
 
 
 number = Rational(1, 2)
-print(float(number))
-print(int(number))
-print(~number)
+number2 = Rational(9, 19)
+print(number == number2)
+print(number > number2)
+print(number < number2)
+print(number >= number2)
+print(number <= number2)
