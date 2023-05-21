@@ -1,0 +1,5 @@
+1. Read and Display content of the file in the most readable way you can achieve: people.txt
+2. Read and Display content in the output, but sort the data based on votes received, Highest to Lowest: eurovision.txt
+3. Read and Display the content of it with every single character in this file shown in reverse case. Every lowercase letter should become Uppercase and every upper case should become lowercase: cupcake.txt
+4. Find the shortest word in the file and display it in the output together with the length of this word. cupcake.txt
+5. Find the average for all numbers in each line, then find the average of those average values and finally append the file with this one number in the new line: numbers.txt

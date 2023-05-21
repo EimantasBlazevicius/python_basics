@@ -1,0 +1,12 @@
+Country,Artist,Song,Jury Votes
+Australia,Kate Miller-Heidke,Zero Gravity,284
+Azerbaijan,Chingiz,Truth,120
+France,Bilal Hassani,Roi,105
+Italy,Mahmood,Soldi,253
+Malta,Michela,Chameleon,107
+Netherlands,Duncan Laurence,Arcade,231
+North Macedonia,Tamara Todevska,Proud,247
+Norway,KEiiNO,Spirit in the Sky,148
+Russia,Sergey Lazarev,Scream,244
+Sweden,John Lundvik,Too Late for Love,241
+Switzerland,Luca Hänni,She Got Me,212

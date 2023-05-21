@@ -1,0 +1,40 @@
+Task 1: Write a program to create a function that takes two arguments, name and age, and print their value.
+Task 2: Create a function in such a way that we can pass any number of arguments to this function, and the function should process them and display each argument’s value.
+Task 3: Write a program to create function calculation() such that it can accept two variables and calculate addition and subtraction. Also, it must return both addition and subtraction in a single return call.
+def calculation(a, b):
+    # Your Code
+
+res = calculation(40, 10)
+print(res)
+Expected Output:
+50, 30
+Task 4: Using print statements form a tree in the console output. This kind of result
+Task 5: Write a Python program that accepts a word from the user, reverses it and prints it.
+Task 6: Write a Python program to count the number of even and odd numbers in a series of numbers
+Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+Expected Output :
+Number of even numbers : 5
+Number of odd numbers : 4
+Task 7: Write a Python program that accepts a string and calculates the number of digits and letters.
+Sample Data : Python 3.2
+Expected Output :
+Letters 6
+Digits 2
+Task 8: Write a Python program to calculate a dog's age in dog years.
+Note: For the first two years, a dog year is equal to 10.5 human years. After that, each dog year equals 4 human years.
+Expected Output:
+Input a dog's age in human years: 15
+The dog's age in dog's years is 73
+Task 9: Write a Python program to convert a month name to a number of days.
+Expected Output:
+List of months: January, February, March, April, May, June, July, August
+, September, October, November, December
+Input the name of Month: February
+No. of days: 28/29 days
+Task 10: Write a program to given the time of day would return a word
+Morning, Day, Evening or Night
+hint: use datetime library.
+to get current time you will need to
+from datetime import datetime
+
+current_time = datetime.now().time()
