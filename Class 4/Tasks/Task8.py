@@ -12,4 +12,4 @@ def human_to_dog_years(human_years):
     return dog_years
 
 
-print(human_to_dog_years(15))
+print(human_to_dog_years(12))

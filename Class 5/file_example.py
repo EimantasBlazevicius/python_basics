@@ -1,5 +1,5 @@
 users_list = []
-with open("example.txt") as f:
+with open("../Class 6/Tasks/example.txt") as f:
     headers = f.readline().strip('\n').split(" ")
     print(headers)
     for line in f.readlines():

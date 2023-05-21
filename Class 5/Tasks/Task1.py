@@ -20,12 +20,10 @@ with open('files/people.txt') as f:
 
         people.append(person_to_add)
 
-# print(people)
-
-print('-------------------------------------------------------------------------------')
+print('-----------------------------------------------------------------------------')
 for each in people:
     print(f"|{fill_string_with_spaces(each['id'], 2)} | {fill_string_with_spaces(each['first_name'], 9)} |"
-          f"{fill_string_with_spaces(each['last_name'], 13)} |{fill_string_with_spaces(each['email'], 34)} |"
+          f"{fill_string_with_spaces(each['last_name'], 13)} |{fill_string_with_spaces(each['email'], 32)} |"
           f"{fill_string_with_spaces(each['gender'], 9)} |")
 
-print('-------------------------------------------------------------------------------')
+print('-----------------------------------------------------------------------------')

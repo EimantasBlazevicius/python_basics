@@ -15,7 +15,7 @@ def display_users():
 
 def get_users_from_file():
     users_list = []
-    with open("../example.txt") as f:
+    with open("../../Class 6/Tasks/example.txt") as f:
         headers = f.readline().strip('\n').split(" ")
         for line in f.readlines():
             user = line.strip().split(" ")
@@ -27,7 +27,7 @@ def get_users_from_file():
 
 
 def save_users_to_file():
-    with open('../example.txt', 'w+') as f:
+    with open('../../Class 6/Tasks/example.txt', 'w+') as f:
         for key in users[0]:
             f.write(f"{key} ")
         f.write("\n")

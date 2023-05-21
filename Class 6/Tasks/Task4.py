@@ -25,8 +25,9 @@ class SavingsAccount(BankAccount):
         self.interest_rate = interest_rate
 
     def withdraw(self, amount):
-        if self.balance >= amount+0.5:
-            self.balance = self.balance - (amount+0.5)
+        fee = 0.5
+        if self.balance >= amount+fee:
+            self.balance = self.balance - (amount+fee)
         else:
             print('Not enough Money')
 

@@ -4,47 +4,67 @@
 #    register_user( id, name, age, city, potato):
 #        responsible for returning formed user data.
 #        collecting the data from userInput and storing it in the users list is not included to this method
-# display_user:
+# :
 # print(f"The participant {self.name}, aged {self.age} years old, coming from {self.city} have "
 #              f"destroyed {self.potato} potatoes yesterday.")
 # Adjust the code so it would still work after these adjustments.
 
+class User:
+    def __init__(self, id, name='', age='', city='', potato=''):
+        self.id = id
+        self.name = name
+        self.age= age
+        self.city = city
+        self.potato = potato
+
+    def registration_form(self):
+        self.name = input("What is the user name?: ")
+        self.age = input("What is the user age?: ")
+        self.city = input("What is the user city?: ")
+        self.potato = input("What is the potatoes input?: ")
+
+    def display_user(self):
+        print(f"The participant {self.name}, aged {self.age} years old, coming from {self.city} have "
+              f"destroyed {self.potato} potatoes yesterday.")
+
 
 def registration():
-    user_name = input("What is the user name?: ")
-    user_age = input("What is the user age?: ")
-    user_city = input("What is the user city?: ")
-    user_potatoes = input("What is the potatoes input?: ")
-    last_user = users[len(users)-1]
-    users.append({'id': int(last_user['id'])+1, 'name': user_name, 'age': user_age, 'city': user_city, 'potato': user_potatoes})
+    if len(users) > 0:
+        last_user = len(users)+1
+        user = User(last_user)
+    else:
+        user = User(1)
+    user.registration_form()
+    users.append(user)
 
 
 def display_users():
     for user in users:
-        print(f"The participant {user['name']}, aged {user['age']} years old, coming from {user['city']} have "
-              f"destroyed {user['potato']} potatoes yesterday.")
+        user.display_user()
 
 
 def get_users_from_file():
     users_list = []
-    with open("../example.txt") as f:
+    with open("example.txt") as f:
         headers = f.readline().strip('\n').split(" ")
         for line in f.readlines():
             user = line.strip().split(" ")
             each_user = {}
             for index, value in enumerate(user):
                 each_user[headers[index]] = user[index]
-            users_list.append(each_user)
+            user_from_file = User(each_user['id'], each_user['name'], each_user['age'],
+                                  each_user['city'], each_user['potato'])
+            users_list.append(user_from_file)
     return users_list
 
 
 def save_users_to_file():
-    with open('../example.txt', 'w+') as f:
-        for key in users[0]:
+    with open('example.txt', 'w') as f:
+        for key in ['id', 'name', 'age', 'city', 'potato']:
             f.write(f"{key} ")
         f.write("\n")
         for user in users:
-            f.write(f"{user['id']} {user['name']} {user['age']} {user['city']} {user['potato']}\n")
+            f.write(f"{user.id} {user.name} {user.age} {user.city} {user.potato}\n")
     print("Your users were saved successfully")
 
 

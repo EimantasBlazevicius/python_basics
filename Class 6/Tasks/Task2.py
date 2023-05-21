@@ -18,7 +18,7 @@ class Square(Rectangle):
         super().__init__(length=length, width=length)
 
     def perimeter(self):
-        return 4 *self.length
+        return 4 * self.length
 
 
 thing = Square(2, 3)

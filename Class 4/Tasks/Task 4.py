@@ -16,4 +16,4 @@ def draw_tree(height):
 
 
 # Call the function to draw a tree with a height of 5
-draw_tree(5)
+draw_tree(100)
