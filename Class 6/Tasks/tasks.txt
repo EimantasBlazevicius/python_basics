@@ -1,0 +1,21 @@
+1.
+Create a class called "Car" with attributes like "make," "model," and "year."
+Create an instance of the Car class and print its attributes.
+Add a method to the Car class that calculates the car's age based on the current year.
+Create a subclass of Car called "ElectricCar" with an additional attribute for battery capacity.
+Override the Car class's method in the ElectricCar subclass to also calculate the remaining battery life.
+2.
+Create a class called "Rectangle" with attributes for length and width.
+Add a method to the Rectangle class that calculates and returns the area.
+Create a subclass of Rectangle called "Square" that automatically sets the length and width to be equal.
+Add a method to the Square class that calculates and returns the perimeter.
+3.
+Create a class called "Person" with attributes for name and age.
+Add a method to the Person class that prints a greeting message with the person's name.
+Create a subclass of Person called "Student" with an additional attribute for student ID.
+Override the Person class's method in the Student subclass to include the student ID in the greeting message.
+4.
+Create a class called "BankAccount" with attributes for account number and balance.
+Add methods to the BankAccount class for depositing and withdrawing money.
+Create a subclass of BankAccount called "SavingsAccount" with an additional attribute for interest rate.
+Override the BankAccount class's withdraw method in the SavingsAccount subclass to include a fee for each withdrawal.
